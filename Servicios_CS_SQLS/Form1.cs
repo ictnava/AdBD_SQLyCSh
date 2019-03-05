@@ -23,5 +23,25 @@ namespace Servicios_CS_SQLS
             FormEmpleados fEmpleados = new FormEmpleados();
             fEmpleados.ShowDialog();
         }
+
+        private void servicios(object sender, EventArgs e)
+        {
+            Servicios  fServicios= new Servicios();
+            fServicios.ShowDialog();
+        }
+
+        private void clientes(object sender, EventArgs e)
+        {
+            Clientes fClientes = new Clientes();
+            fClientes.ShowDialog();
+        }
+
+        private void materiales(object sender, EventArgs e)
+        {
+            Materiales fMateriales = new Materiales();
+            fMateriales.ShowDialog();
+        }
     }
+
 }
+
