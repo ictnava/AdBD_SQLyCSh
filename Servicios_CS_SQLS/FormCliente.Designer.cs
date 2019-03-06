@@ -1,6 +1,6 @@
 ﻿namespace Servicios_CS_SQLS
 {
-    partial class Clientes
+    partial class FormCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCliente));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btModificar = new System.Windows.Forms.Button();
             this.btBaja = new System.Windows.Forms.Button();
@@ -54,7 +54,7 @@
             // 
             this.pictureBox1.Enabled = false;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(507, 98);
+            this.pictureBox1.Location = new System.Drawing.Point(482, 44);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(248, 154);
             this.pictureBox1.TabIndex = 36;
@@ -105,10 +105,10 @@
             this.cBGenero.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cBGenero.FormattingEnabled = true;
             this.cBGenero.Items.AddRange(new object[] {
-            "Cliente UASLP",
-            "Cliente de la Facultad",
-            "Cliente Externo"});
-            this.cBGenero.Location = new System.Drawing.Point(147, 254);
+            "UASLP",
+            "Facultad",
+            "Externo"});
+            this.cBGenero.Location = new System.Drawing.Point(147, 221);
             this.cBGenero.Name = "cBGenero";
             this.cBGenero.Size = new System.Drawing.Size(231, 23);
             this.cBGenero.TabIndex = 30;
@@ -117,7 +117,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(25, 255);
+            this.label6.Location = new System.Drawing.Point(25, 222);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(123, 17);
             this.label6.TabIndex = 29;
@@ -127,7 +127,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(25, 214);
+            this.label5.Location = new System.Drawing.Point(25, 181);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 17);
             this.label5.TabIndex = 27;
@@ -136,7 +136,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(90, 174);
+            this.textBox1.Location = new System.Drawing.Point(90, 141);
             this.textBox1.MaxLength = 200;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(288, 23);
@@ -146,7 +146,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(25, 178);
+            this.label4.Location = new System.Drawing.Point(25, 145);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 17);
             this.label4.TabIndex = 25;
@@ -155,7 +155,7 @@
             // tBApMat
             // 
             this.tBApMat.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tBApMat.Location = new System.Drawing.Point(176, 132);
+            this.tBApMat.Location = new System.Drawing.Point(176, 99);
             this.tBApMat.MaxLength = 50;
             this.tBApMat.Name = "tBApMat";
             this.tBApMat.Size = new System.Drawing.Size(202, 23);
@@ -165,7 +165,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 136);
+            this.label3.Location = new System.Drawing.Point(25, 103);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(144, 17);
             this.label3.TabIndex = 23;
@@ -174,7 +174,7 @@
             // tBApPat
             // 
             this.tBApPat.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tBApPat.Location = new System.Drawing.Point(176, 94);
+            this.tBApPat.Location = new System.Drawing.Point(176, 61);
             this.tBApPat.MaxLength = 50;
             this.tBApPat.Name = "tBApPat";
             this.tBApPat.Size = new System.Drawing.Size(202, 23);
@@ -184,7 +184,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(25, 98);
+            this.label2.Location = new System.Drawing.Point(25, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(140, 17);
             this.label2.TabIndex = 21;
@@ -193,7 +193,7 @@
             // tBNombres
             // 
             this.tBNombres.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tBNombres.Location = new System.Drawing.Point(117, 57);
+            this.tBNombres.Location = new System.Drawing.Point(117, 24);
             this.tBNombres.MaxLength = 100;
             this.tBNombres.Name = "tBNombres";
             this.tBNombres.Size = new System.Drawing.Size(261, 23);
@@ -203,7 +203,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 63);
+            this.label1.Location = new System.Drawing.Point(25, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 17);
             this.label1.TabIndex = 19;
@@ -212,7 +212,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(117, 214);
+            this.textBox2.Location = new System.Drawing.Point(117, 181);
             this.textBox2.MaxLength = 50;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(261, 23);
@@ -226,7 +226,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(748, 222);
             this.dataGridView1.TabIndex = 45;
             // 
-            // Clientes
+            // FormCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -248,7 +248,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tBNombres);
             this.Controls.Add(this.label1);
-            this.Name = "Clientes";
+            this.Name = "FormCliente";
             this.Text = "Clientes";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

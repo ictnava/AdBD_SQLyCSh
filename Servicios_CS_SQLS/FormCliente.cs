@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Servicios_CS_SQLS
 {
-    public partial class Clientes : Form
+    public partial class FormCliente : Form
     {
-        public Clientes()
+        public FormCliente()
         {
             InitializeComponent();
         }

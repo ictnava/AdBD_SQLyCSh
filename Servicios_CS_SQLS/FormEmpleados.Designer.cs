@@ -35,7 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tBApMat = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tBEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cBTipo = new System.Windows.Forms.ComboBox();
@@ -75,7 +75,7 @@
             // 
             this.tBApPat.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tBApPat.Location = new System.Drawing.Point(173, 59);
-            this.tBApPat.MaxLength = 50;
+            this.tBApPat.MaxLength = 100;
             this.tBApPat.Name = "tBApPat";
             this.tBApPat.Size = new System.Drawing.Size(202, 23);
             this.tBApPat.TabIndex = 3;
@@ -94,7 +94,7 @@
             // 
             this.tBApMat.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tBApMat.Location = new System.Drawing.Point(173, 97);
-            this.tBApMat.MaxLength = 50;
+            this.tBApMat.MaxLength = 100;
             this.tBApMat.Name = "tBApMat";
             this.tBApMat.Size = new System.Drawing.Size(202, 23);
             this.tBApMat.TabIndex = 5;
@@ -109,14 +109,14 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Apellido Materno: ";
             // 
-            // textBox1
+            // tBEmail
             // 
-            this.textBox1.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(87, 139);
-            this.textBox1.MaxLength = 200;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(288, 23);
-            this.textBox1.TabIndex = 7;
+            this.tBEmail.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tBEmail.Location = new System.Drawing.Point(87, 139);
+            this.tBEmail.MaxLength = 100;
+            this.tBEmail.Name = "tBEmail";
+            this.tBEmail.Size = new System.Drawing.Size(288, 23);
+            this.tBEmail.TabIndex = 7;
             // 
             // label4
             // 
@@ -205,46 +205,56 @@
             this.btAlta.TabIndex = 14;
             this.btAlta.Text = "Alta";
             this.btAlta.UseVisualStyleBackColor = false;
+            this.btAlta.Click += new System.EventHandler(this.btAlta_Click);
             // 
             // btBaja
             // 
             this.btBaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(137)))));
+            this.btBaja.Enabled = false;
             this.btBaja.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btBaja.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btBaja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(250)))));
-            this.btBaja.Location = new System.Drawing.Point(329, 323);
+            this.btBaja.Location = new System.Drawing.Point(394, 323);
             this.btBaja.Name = "btBaja";
             this.btBaja.Size = new System.Drawing.Size(137, 35);
             this.btBaja.TabIndex = 15;
             this.btBaja.Text = "Baja";
             this.btBaja.UseVisualStyleBackColor = false;
+            this.btBaja.Click += new System.EventHandler(this.btBaja_Click);
             // 
             // btModificar
             // 
             this.btModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(137)))));
+            this.btModificar.Enabled = false;
             this.btModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btModificar.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btModificar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(250)))));
-            this.btModificar.Location = new System.Drawing.Point(636, 323);
+            this.btModificar.Location = new System.Drawing.Point(743, 323);
             this.btModificar.Name = "btModificar";
             this.btModificar.Size = new System.Drawing.Size(137, 35);
             this.btModificar.TabIndex = 16;
             this.btModificar.Text = "Modificar";
             this.btModificar.UseVisualStyleBackColor = false;
+            this.btModificar.Click += new System.EventHandler(this.btModificar_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(25, 405);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(748, 222);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(855, 222);
             this.dataGridView1.TabIndex = 17;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.ColumnHeaderCellChanged += new System.Windows.Forms.DataGridViewColumnEventHandler(this.dataGridView1_ColumnHeaderCellChanged);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Enabled = false;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(504, 63);
+            this.pictureBox1.Location = new System.Drawing.Point(632, 83);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(248, 154);
             this.pictureBox1.TabIndex = 18;
@@ -255,7 +265,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            this.ClientSize = new System.Drawing.Size(800, 653);
+            this.ClientSize = new System.Drawing.Size(909, 653);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btModificar);
@@ -267,7 +277,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cBTipo);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tBEmail);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tBApMat);
             this.Controls.Add(this.label3);
@@ -294,7 +304,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tBApMat;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tBEmail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cBTipo;

@@ -10,13 +10,16 @@ using System.Windows.Forms;
 
 namespace Servicios_CS_SQLS
 {
-    public partial class Servicios : Form
+    public partial class FormServicio : Form
     {
-        public Servicios()
+        public FormServicio()
         {
             InitializeComponent();
         }
 
-       
+        private void FormServicio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

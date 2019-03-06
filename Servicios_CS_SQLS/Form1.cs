@@ -26,13 +26,13 @@ namespace Servicios_CS_SQLS
 
         private void servicios(object sender, EventArgs e)
         {
-            Servicios  fServicios= new Servicios();
+            FormServicio  fServicios= new FormServicio();
             fServicios.ShowDialog();
         }
 
         private void clientes(object sender, EventArgs e)
         {
-            Clientes fClientes = new Clientes();
+            FormCliente fClientes = new FormCliente();
             fClientes.ShowDialog();
         }
 
