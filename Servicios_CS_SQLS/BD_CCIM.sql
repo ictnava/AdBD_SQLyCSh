@@ -137,3 +137,26 @@ END
 --Disparador 6
 
 SELECT * FROM Persona.Empleado;
+
+/*Ejemplo de como obtener el registro recién insertado
+para el caso de los clientes*/
+INSERT INTO Persona.Cliente (nombres, apellidoPaterno, apellidoMaterno, email, telefono, tipo)
+VALUES ('Isauro', 'Nava', 'Torres', 'ictorna@gmail.com', '1234567', 'Facultad');
+INSERT INTO Persona.ClienteFacultad(idCliente, carrera, asignatura) VALUES (1, 'Informática', 'BD');
+SELECT SCOPE_IDENTITY();
+
+INSERT INTO Persona.Cliente (nombres, apellidoPaterno, apellidoMaterno, email, telefono, tipo)
+VALUES ('Nestor', 'Mendez', 'Gutierrez', 'nexus125@gmail.com', '1234567', 'UASLP');
+INSERT INTO Persona.ClienteUASLP(idCliente, departamento, asignatura) VALUES (2, 'Computación', 'BD');
+
+INSERT INTO Persona.Cliente (nombres, apellidoPaterno, apellidoMaterno, email, telefono, tipo)
+VALUES ('Gerardo', 'Nava', 'Torres', 'gnsdf@gmail.com', '12345577', 'Externo');
+INSERT INTO Persona.ClienteExterno(idCliente, empresa, rfc) VALUES (3, 'Empresa1', '12354554724');
+
+SELECT * FROM Persona.Cliente JOIN Persona.ClienteFacultad ON Persona.Cliente.idCliente = Persona.ClienteFacultad.idCliente 
+UNION SELECT * FROM Persona.Cliente JOIN Persona.ClienteUASLP ON Persona.Cliente.idCliente = Persona.ClienteUASLP.idCliente
+UNION SELECT * FROM Persona.Cliente  JOIN Persona.ClienteExterno ON Persona.Cliente.idCliente = Persona.ClienteExterno.idCliente;
+
+DELETE FROM Persona.Cliente WHERE idCliente = 8
+SELECT * FROM Persona.ClienteUASLP
+SELECT * FROM Persona.Cliente
